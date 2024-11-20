@@ -6,6 +6,7 @@ export const getBlog = /* GraphQL */ `
     getBlog(id: $id) {
       id
       name
+      sellingPrice
       posts {
         nextToken
         __typename
@@ -26,6 +27,7 @@ export const listBlogs = /* GraphQL */ `
       items {
         id
         name
+        sellingPrice
         createdAt
         updatedAt
         __typename
@@ -43,6 +45,7 @@ export const getPost = /* GraphQL */ `
       blog {
         id
         name
+        sellingPrice
         createdAt
         updatedAt
         __typename
